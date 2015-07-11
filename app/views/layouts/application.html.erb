@@ -12,6 +12,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if current_page?(controller: 'posts', action: 'index') || current_page?(controller: 'pages', action: 'about') %>
   <div id="sidebar">
   <div id="logo">
   <%= link_to root_path do %>
@@ -21,7 +22,8 @@
 
   <ul>
     <li class="category">Website</li>
-    <li><%= link_to "Blog", root_path %></li>
+    <li><%= link_to "mPower", root_path %></li>
+    <li><%= link_to "Blog", posts_path %></li>
     <li><%= link_to "About", about_path %></li>
   </ul>
 
@@ -60,6 +62,7 @@
           </div>	
       <%end%>
   </div>
+  <%end%>
   <%flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: "alert") %>
   <% end %>

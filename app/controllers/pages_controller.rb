@@ -4,5 +4,11 @@ class PagesController < ApplicationController
 
 	end
 
-	
+	def contact
+
+	end
+
+	def mpower
+
+	end
 end

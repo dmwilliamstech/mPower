@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   resources :posts do
   	resources :comments
   end
+  root "pages#mpower"
+#  root "posts#index"
 
-  root "posts#index"
-
+  get '/contact', to: 'pages#contact'
   get '/about', to: 'pages#about'
 
 end
