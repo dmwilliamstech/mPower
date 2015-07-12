@@ -10,5 +10,8 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'pages#contact'
   get '/about', to: 'pages#about'
+  get '/whoweare', to: 'pages#whoweare'
+  get '/aboutus', to: 'pages#aboutus'
+  get '/whatwedo', to: 'pages#whatwedo'
 
 end

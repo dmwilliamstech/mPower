@@ -11,4 +11,15 @@ class PagesController < ApplicationController
 	def mpower
 
 	end
+
+	def aboutus
+
+	end
+
+
+	def whoweare
+	end
+
+	def whatwedo
+	end
 end

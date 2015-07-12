@@ -1,29 +1,24 @@
-    
-      <div class="row">
-        <div class="large-12 columns">
-       
-           
             <nav class="top-bar" data-topbar>
               <ul class="title-area">
                  
                 <li class="name">
                   <h1>
-                    <a href="#">
-                      Top Bar Title
+                 <a><%= link_to "mPower", root_path %>
                     </a>
                   </h1>
                 </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+                <li class="toggle-topbar menu-icon"><a><span>menu</span></a></li>
               </ul>
        
               <section class="top-bar-section">
                 <ul class="left">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
+                    <li> <a><%= link_to "About Us", aboutus_path %></a></li>
+                  <li><a><%= link_to "Checkout my blog", posts_path %></a></li>
+                  <li><a><%= link_to "Contact Us", contact_path %></a></li>
                 </ul>
        
                 <ul class="right">
-                  <li class="search">
+<li class="search">
                     <form>
                       <input type="search">
                     </form>
@@ -35,11 +30,6 @@
                 </ul>
               </section>
             </nav>
-       
-           
-        
-          </div>
-        </div>
        
        
         <div class="row">
