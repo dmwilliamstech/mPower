@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  devise_for :admins
+  devise_for :admins, :skip => :registration
   devise_for :users
   resources :posts do
   	resources :comments
@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   get '/whoweare', to: 'pages#whoweare'
   get '/aboutus', to: 'pages#aboutus'
   get '/whatwedo', to: 'pages#whatwedo'
+  get "*path" => redirect("/")
 
 end
