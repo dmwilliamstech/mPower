@@ -32,38 +32,8 @@
 
 <body>
 
-            <nav class="top-bar" data-topbar>
-              <ul class="title-area">
-                 
-                <li class="name">
-                  <h1>
-                 <a><%= link_to "mPower", root_path %>
-                    </a>
-                  </h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a><span>menu</span></a></li>
-              </ul>
-       
-              <section class="top-bar-section">
-                <ul class="left">
-                    <li> <a><%= link_to "About Us", aboutus_path %></a></li>
-                  <li><a><%= link_to "Checkout my blog", posts_path %></a></li>
-                  <li><a><%= link_to "Contact Us", contact_path %></a></li>
-                </ul>
-       
-                <ul class="right">
-<li class="search">
-                    <form>
-                      <input type="search">
-                    </form>
-                  </li>
-       
-                  <li class="has-button">
-                    <a class="small button" href="#">Search</a>
-                  </li>
-                </ul>
-              </section>
-            </nav>
+       <%= render 'mHeader' %>
+
 
     <!-- Header -->
     <a name="about"></a>

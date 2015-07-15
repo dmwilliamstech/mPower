@@ -1,36 +1,5 @@
-            <nav class="top-bar" data-topbar>
-              <ul class="title-area">
-                 
-                <li class="name">
-                  <h1>
-                 <a><%= link_to "mPower", root_path %>
-                    </a>
-                  </h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a><span>menu</span></a></li>
-              </ul>
-       
-              <section class="top-bar-section">
-                <ul class="left">
-                    <li> <a><%= link_to "About Us", aboutus_path %></a></li>
-                  <li><a><%= link_to "Checkout my blog", posts_path %></a></li>
-                  <li><a><%= link_to "Contact Us", contact_path %></a></li>
-                </ul>
-       
-                <ul class="right">
-<li class="search">
-                    <form>
-                      <input type="search">
-                    </form>
-                  </li>
-       
-                  <li class="has-button">
-                    <a class="small button" href="#">Search</a>
-                  </li>
-                </ul>
-              </section>
-            </nav>
-       
+       <%= render 'mHeader' %>
+
        
         <div class="row">
           <div class="large-12 columns">
@@ -39,9 +8,8 @@
        
             <div class="hide-for-small">
               <div id="featured">
-                    <img src="http://placehold.it/1000x400&text=Slide Image" alt="slide image">
-                     
-                </div>
+                    <%= image_tag("mpowerYouth.png", size: "1000x400", alt: "Edit Entry") %>
+              </div>
               </div>
        
            
@@ -69,23 +37,23 @@
            
        
               <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail"/>
-                <h6 class="panel">Thrilling info coming soon</h6>
+                <%= image_tag("breath.png", size: "250x250", alt: "Careers fairs") %>
+                <h6 class="panel">Career fairs</h6>
               </div>
        
               <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail"/>
-                <h6 class="panel">Thrilling info coming soon</h6>
+                <%= image_tag("careerLifecycle.png", size: "250x250", alt: "Career Lifecycle") %>
+                <h6 class="panel">Speak to students middle and high school</h6>
               </div>
        
               <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail"/>
-                <h6 class="panel">Thrilling info coming soon</h6>
+                <%= image_tag("conferences.png", size: "250x250", alt: "Conferences") %>
+                <h6 class="panel">Attending conferences</h6>
               </div>
        
               <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail"/>
-                <h6 class="panel">Thrilling info coming soon</h6>
+                <%= image_tag("community.png", size: "250x250", alt: "Community") %>
+                <h6 class="panel">Participating in community events</h6>
               </div>
        
            
@@ -133,7 +101,7 @@
                 <h4>Get mPowered</h4><hr/>
        
                 <a class="large button expand" href="#">
-                  Call To Arms!
+                  Want to get mPowered.
                 </a>
        
                 <a class="large button expand" href="#">
