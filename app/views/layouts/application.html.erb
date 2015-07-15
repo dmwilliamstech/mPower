@@ -12,7 +12,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if current_page?(controller: 'posts', action: 'index') || current_page?(controller: 'pages', action: 'about') %>
+<% if controller.controller_name == "posts" && controller.action_name == "index" %>
   <div id="sidebar">
   <div id="logo">
   <%= link_to root_path do %>
