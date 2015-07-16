@@ -18,4 +18,9 @@ def markdown(text)
   markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
   markdown_to_html.render(text).html_safe
 end
+
+def retina_image_tag(default_name, options={})
+    retina_name = default_name.gsub(%r{\.\w+$}, '@2x\0')
+    image_tag(default_name, options.merge('data-interchange' => "[#{asset_path(retina_name)}, (retina)]"))
+  end
 end

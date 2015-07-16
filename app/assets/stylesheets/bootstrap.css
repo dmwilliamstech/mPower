@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -242,6 +243,7 @@ th {
   select {
     background: #fff !important;
   }
+
   .navbar {
     display: none;
   }

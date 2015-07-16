@@ -1488,3 +1488,32 @@ $include-html-global-classes: $include-html-classes;
 @import 'foundation';
 body{
 }
+
+#secA{ 
+	background: url(image_path( 'mpowerStudents.jpg')) no-repeat;
+	background-size: 100%
+}
+
+#secB{ 
+	background: url(image_path( 'jump.png')) no-repeat;
+	background-size: 100%
+
+}
+
+#secC{ 
+	background: url(image_path( 'NOFEAR.png')) no-repeat;
+		background-size: 100%
+
+}
+
+#secD{ 
+	background: url(image_path( 'engaging.jpg')) no-repeat;
+		background-size: 100%
+
+}
+
+#secE{ 
+	background: url(image_path( 'engaging.jpg')) no-repeat;
+		background-size: 100%
+
+}
