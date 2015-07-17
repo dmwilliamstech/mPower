@@ -1490,13 +1490,12 @@ body{
 }
 
 #secA{ 
-	background: url(image_path( 'mpowerStudents.jpg')) no-repeat;
-	background-size: 100%
+	background: url(image_path( 'mpowerStudents.jpg')) no-repeat fixed;
 }
 
 #secB{ 
 	background: url(image_path( 'jump.png')) no-repeat;
-	background-size: 100%
+	background-size: contain
 
 }
 
@@ -1513,7 +1512,7 @@ body{
 }
 
 #secE{ 
-	background: url(image_path( 'engaging.jpg')) no-repeat;
+	background: url(image_path( 'challenge.jpeg')) no-repeat;
 		background-size: 100%
 
 }
