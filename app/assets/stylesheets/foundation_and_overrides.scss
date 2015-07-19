@@ -1490,29 +1490,40 @@ body{
 }
 
 #secA{ 
-	background: url(image_path( 'mpowerStudents.jpg')) no-repeat fixed;
+	background: url(image_path( 'mpowerStudents.jpg')) no-repeat;
+		background-size: contain;
+	background-position: left; 
+
 }
 
 #secB{ 
 	background: url(image_path( 'jump.png')) no-repeat;
-	background-size: contain
+		background-size: contain;
+	background-position: right; 
+
 
 }
 
 #secC{ 
 	background: url(image_path( 'NOFEAR.png')) no-repeat;
-		background-size: 100%
+		background-size: contain;
+	background-position: right; 
+
 
 }
 
 #secD{ 
 	background: url(image_path( 'engaging.jpg')) no-repeat;
-		background-size: 100%
+		background-size: contain;
+	background-position: right; 
+
+
 
 }
 
 #secE{ 
-	background: url(image_path( 'challenge.jpeg')) no-repeat;
-		background-size: 100%
+	background: url(image_path( 'dontJustStand.jpeg')) no-repeat;
+	background-size: contain;
+	background-position: left; 
 
 }

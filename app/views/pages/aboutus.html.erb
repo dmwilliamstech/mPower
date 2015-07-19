@@ -15,7 +15,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-<%= stylesheet_link_tag    "aboutUs", :media => "all" %>
+    <link href="css/pages.scss" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -38,19 +39,67 @@
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+                    <%= image_tag("macStuff.jpg", size: "1200x315", alt: "macStuff") %>
+      <div class="carousel-caption">
+          <h3>Mac Stuff</h3>
+      </div>
+    </div>
+    <div class="item">
+                    <%= image_tag("rayBans.jpg", size: "1200x315", alt: "rayBands") %>
+      <div class="carousel-caption">
+          <h3>Placeholder</h3>
+      </div>
+    </div>
+    <div class="item">
+                    <%= image_tag("roadLessTraveled.jpg", size: "1200x315", alt: "macStuff") %>
+      <div class="carousel-caption">
+          <h3>Placeholder</h3>
+      </div>
+    </div>
+     <div class="item">
+                    <%= image_tag("steps.jpg", size: "1200x315", alt: "steps") %>
+      <div class="carousel-caption">
+          <h3>Placeholder</h3>
+      </div>
+    </div>
+ <div class="item">
+                    <%= image_tag("see.jpg", size: "1200x315", alt: "see") %>
+      <div class="carousel-caption">
+          <h3>Placeholder</h3>
+      </div>
+    </div>
 
-            <div class="row">
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+        </div>
+        </div>
+<!--             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Who are we and what we do</h1>
                        </div>
                 </div>
-            </div>
+            </div> -->
 
-        </div>
-        <!-- /.container -->
-
-    </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
@@ -58,15 +107,16 @@
 	<a  name="services"></a>
 
         <!-- /.content-section-a -->
-        <div class="content-section-b" id="secD">
+        <div class="content-section-a" id="secD">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading"><font size="20" color="red">n</font>Gaging</h2>
+
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">nGaging</h2>
                     <p class="lead">Those who have...</p>
                 
              </div>
@@ -80,15 +130,15 @@
 
         <!-- /.content-section-b -->
 
-        <div class="content-section-a" id="secE">
+        <div class="content-section-b" id="secE">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6 pull-rght">
+                <div class="col-lg-5 col-sm-6 pull-right">
+                    <h2 class="section-heading"><font size="20" color="red">C</font>hallenging</h2>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Challenging</h2>
                     <p class="lead">......</p>
                
                </div>
@@ -105,9 +155,10 @@
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
+                <h2 class="section-heading">nCouraging</h2>
+
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">nCouraging</h2>
                     <p class="lead">......</p>
                
         </div>
@@ -118,17 +169,15 @@
 
     </div>
 
-    <div class="content-section-a" id="secA" >
+    <div class="content-section-b" id="secA" >
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6 pull-right" >
+                <h2 class="section-heading">mPowering Minds</h2>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    
-                    <h2 class="section-heading">mPowering Minds</h2>
-
                     <p class="lead">Giving the next generation the plan the tools and the motivation to be what the want to be</p>
                     </div>
                 </div>
@@ -141,15 +190,15 @@
     <!-- /.content-section-a -->
 
 
-    <div class="content-section-b" id="secB">
+    <div class="content-section-a" id="secB">
 
         <div class="container" >
 
             <div class="row">
                 <div class="col-lg-5   col-sm-6">
+                    <h2 class="section-heading">nAbling</h2>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">nAbling</h2>
                     <p class="lead">Those who have...</p>
                 </div>
                
@@ -168,7 +217,11 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+<script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
+</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
