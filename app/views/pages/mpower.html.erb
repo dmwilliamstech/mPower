@@ -1,6 +1,8 @@
        <%= render 'mHeader' %>
       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
-
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
       <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
 
        
@@ -45,19 +47,12 @@
                <%= image_tag("mpowerYouth.png", size: "1000x600", alt: "Edit Entry") %>
             </div>
           </div>
-       
-       
-         
-       
           </div>
         </div><br>
        
         <div class="row">
           <div class="large-12 columns">
             <div class="row">
-       
-           
-       
               <div class="large-3 small-6 columns">
                 <%= image_tag("careerLifecycle.png", size: "250x250", alt: "Careers fairs") %>
                 <h6 class="panel">Career fairs</h6>
@@ -77,13 +72,10 @@
                 <%= image_tag("community.png", size: "250x250", alt: "Community") %>
                 <h6 class="panel">Participating in community events</h6>
               </div>
-       
-           
-       
-            </div>
+                </div>
           </div>
         </div>
-       
+       <%= image_tag("What_do_you_think_of_these.gif", class: "menu_icon", size: "350x350") %>
 
         <div class="row">
           <div class="large-12 columns">
@@ -142,5 +134,15 @@
            
        
        <%= render 'footer' %>
+       <script>$(document).ready(function(){
+$('#slider1') .cycle({
+fx: 'fade', // here change effect to blindX, blindY, blindZ etc 
+speed: 'fast', 
+timeout: 2000 
+});
+}); </script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
 
     
