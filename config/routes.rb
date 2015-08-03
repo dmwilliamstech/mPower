@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root "pages#mpower"
 #  root "posts#index"
 
+resources "contacts", only: [:new, :create]
+
   get '/contact', to: 'pages#contact'
   get '/about', to: 'pages#about'
   get '/whoweare', to: 'pages#whoweare'
