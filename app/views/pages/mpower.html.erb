@@ -1,35 +1,30 @@
        <%= render 'mHeader' %>
       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+      <%= javascript_include_tag "intro" %>
 
-       
+      <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+      <%= stylesheet_link_tag "style2Demo" %>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
+        <body>
+
+           
+      <div class="sp-containers">
+        <div class="sp-contents">
+          <div class="sp-globes"></div>
+          <h2 class="frame-1">Each generation should surpass the previous</h2>
+          <h2 class="frame-2">But a plan, the tools and motivation are a struggle for some</h2>
+          <h2 class="frame-3">We plan to change that!</h2>
+          <h2 class="frame-4">You can too!</h2>
+          <h2 class="frame-5"><span>Ngage</span> <span>Ncourage</span> <span>MPWR</span></h2>
+          <a><%= link_to 'Get mpwr\'d', contacts_path, class: "sp-circle-link" %></a>
+        </div>
+      </div>
+
+        <div id="mySite">
         <div class="row">
           <div class="large-12 columns">
-       
- <!--           <ul class="example-orbit-content" data-orbit>
-  <li data-orbit-slide="headline-1">
-    <div>
-      <h2>Headline 1</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-2">
-    <div>
-      <h2>Headline 2</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-3">
-    <div>
-      <h2>Headline 3</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-</ul> -->
-       
             <div class="hide-for-small">
               <div id="featured">
                     <%= image_tag("mpowerYouth.png", size: "1000x400", alt: "Edit Entry") %>
@@ -37,12 +32,7 @@
               </div>
        
            
-       
-       
-           
-       
-       
-          <div class="row">
+             <div class="row">
             <div class="small-12 show-for-small"><br>
                <%= image_tag("mpowerYouth.png", size: "1000x600", alt: "Edit Entry") %>
             </div>
@@ -127,19 +117,8 @@
             </div>
           </div>
         </div>
-       
-           
-       
-       <%= render 'footer' %>
-       <script>$(document).ready(function(){
-$('#slider1') .cycle({
-fx: 'fade', // here change effect to blindX, blindY, blindZ etc 
-speed: 'fast', 
-timeout: 2000 
-});
-}); </script>
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
-
     
+       
+        <%= render 'footer' %>
+            </div>
+        </body>
