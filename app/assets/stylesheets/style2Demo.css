@@ -8,6 +8,10 @@ body{
 	font-family:'Myriad Pro', Arial, sans-serif;
 	font-size: 15px;
 }
+#mySite{
+	display:none
+}
+
 a{
 	color: #fff;
 	text-decoration: none;
