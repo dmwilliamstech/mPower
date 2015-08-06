@@ -7,7 +7,17 @@ body{
 	font-family:'Myriad Pro', Arial, sans-serif;
 	font-size: 15px;
 }
+#mySite {
+	display:none;
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
 
+   .fade:hover {
+      opacity: 0.5;
+      }
 
 a{
 	color: #fff;
