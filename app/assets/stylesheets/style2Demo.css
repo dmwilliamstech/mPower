@@ -11,9 +11,6 @@ body{
 	display:none;
    }
 
-   .fade:hover {
-      opacity: 0.5;
-      }
 
 a{
 	color: #fff;
