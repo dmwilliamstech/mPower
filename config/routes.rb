@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :posts do
   	resources :comments
   end
-  root "pages#mpower"
+  root "pages#intro"
 #  root "posts#index"
 
 resources "contacts", only: [:new, :create]
@@ -15,6 +15,7 @@ resources "contacts", only: [:new, :create]
   get '/whoweare', to: 'pages#whoweare'
   get '/aboutus', to: 'pages#aboutus'
   get '/whatwedo', to: 'pages#whatwedo'
-  get "*path" => redirect("/")
+  get '/mpwr', to: 'pages#mpower'
+  get "*path" => redirect("/mpwr")
 
 end

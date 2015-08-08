@@ -1,14 +1,4 @@
-              <script>
-      var timer = 0; //setting this up as global
-        $(document).ready( function () {
-               $("#mySite").hide(); // you could have the site as display:none in css instead of this line.
-                timer = setInterval( showSite , 12000 ) // here's your 2 seconds delay
-        });
-        function showSite() {
-              clearInterval(timer);
-              $(".sp-containers").fadeOut();
-              $("#mySite").fadeIn();
-        }</script>
+              
 <!--       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>-->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -17,20 +7,6 @@
       <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script> -->
         <body>
 
-           
-      <div class="sp-containers">
-        <div class="sp-contents">
-          <div class="sp-globes"></div>
-          <h2 class="frame-1">Each generation should surpass the previous</h2>
-          <h2 class="frame-2">But a plan, the tools and motivation are a struggle for some</h2>
-          <h2 class="frame-3">We plan to change that!</h2>
-          <h2 class="frame-4">You can too!</h2>
-          <h2 class="frame-5"><span>Ngage</span> <span>Ncourage</span> <span>MPWR</span></h2>
-          <a><%= link_to 'Get mpwr\'d', contacts_path, class: "sp-circle-link" %></a>
-        </div>
-      </div>
-
-        <div id="mySite">
         <%= render 'mHeader' %>
         <div class="row">
           <div class="large-12 columns">
@@ -129,5 +105,4 @@
     
        
         <%= render 'footer' %>
-            </div>
         </body>
