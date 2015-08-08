@@ -13,6 +13,7 @@ class PagesController < ApplicationController
 	end
 
 	def intro
+		
 	end
 
 	def aboutus
