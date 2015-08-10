@@ -1,8 +1,5 @@
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
       <link href="/assets/style2Demo.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-      <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script> -->
+
         <body>
         <div class="sp-container">
   <div class="sp-content">
@@ -17,5 +14,18 @@
 </div>
                     </body>
                       <script type="text/javascript">
-    window.location.href="/mpwr"  // put your correct path in a string here
+                      var timer = 0; //setting this up as global
+
+$(document).ready( function () {
+
+       // $("#mySite").hide(); // you could have the site as display:none in css instead of this line.
+        timer = setInterval( showSite , 15000 ) // here's your 15 seconds delay
+
+});
+
+function showSite() {
+      clearInterval(timer);
+      $(".sp-containers").fadeOut();
+          window.location.href="/mpwr"  // put your correct path in a string here
+}
   </script>
