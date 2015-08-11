@@ -9,6 +9,7 @@
         <meta name="keywords" content="coming soon, splash page, css3, animation, effect, web design" />
         <meta name="author" content="Codrops" />
               <link href="/assets/style2Demo.css" rel="stylesheet" />
+              <link href="/assets/demo.css" rel="stylesheet" />
 
        
     <!--[if lt IE 10]>
@@ -24,7 +25,7 @@
           <h2 class="frame-2">But a plan, the tools and motivation are a struggle for some</h2>
           <h2 class="frame-3">We plan to change that!</h2>
           <h2 class="frame-4">You can too!</h2>
-          <h2 class="frame-5"><span>Ngage</span> <span>Ncourage</span> <span>MPWR</span></h2>
+          <h2 class="frame-5" id="theSpan"><span>Ngage</span> <span>Ncourage</span> <span>MPWR</span></h2>
           <a><%= link_to 'Get mpwr\'d', contacts_path, class: "sp-circle-link" %></a>
   </div>
 </div>
@@ -35,18 +36,15 @@
 
         
 <script type="text/javascript">
-                      var timer = 0; //setting this up as global
-
-$(document).ready( function () {
-
-       // $("#mySite").hide(); // you could have the site as display:none in css instead of this line.
-        timer = setInterval( showSite , 25000 ) // here's your 15 seconds delay
-
-});
+var timer = 0;
+var myFrame = $('#theSpan');
+if(myFrame.one('webkitAnimationEnd oanimationend msAnimationEnd animationend')){
+   timer = setInterval( showSite , 2000 )
+};
 
 function showSite() {
       clearInterval(timer);
-      // $(".sp-containers").fadeOut();
+       // $(".sp-container").fadeOut();
           window.location.href="/mpwr"  // put your correct path in a string here
 }
-  </script>
+</script>
