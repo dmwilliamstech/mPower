@@ -11,13 +11,13 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
+ *= require animate
  *= require_self
  //= require foundation_and_overrides
 
  */
- /*
- *= require font-awesome
- */
+
 
 @import 'normalize';
 
