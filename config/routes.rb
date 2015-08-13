@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :posts do
   	resources :comments
   end
-  root "pages#intro"
+  root "pages#home"
 #  root "posts#index"
 
 resources "contacts", only: [:new, :create]
