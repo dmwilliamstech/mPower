@@ -9,7 +9,7 @@ body{
 	font-size: 15px;
 }
 a{
-	color: #fff;
+	color: #FCEBB6;
 	text-decoration: none;
 }
 .container{
@@ -53,7 +53,7 @@ h1.main{
 	float: left;
 }
 .header a:hover{
-	color: #fff;
+	color: #FCEBB6;
 }
 .header span.right{
 	float: right;
