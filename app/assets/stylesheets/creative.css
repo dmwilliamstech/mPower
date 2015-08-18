@@ -33,7 +33,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #FCEBB6;
+    color: #ddd;
 }
 
 h1,
@@ -97,7 +97,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #FCEBB6;
+    color: #ddd;
 }
 
 .navbar-default .nav > li>a,
@@ -161,7 +161,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #FCEBB6;
+        color: #ddd;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -182,7 +182,7 @@ header {
     text-align: center;
     color: #fff;
 /*    background: #fff url(/assets/bg3.jpg) no-repeat top right;*/
-    background: #FCEBB6;
+    background: #78C0A8; 
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -268,7 +268,9 @@ header .header-content .header-content-inner p {
     margin: 0 auto;
     max-width: 650px;
 }
-
+.noBorder{
+    border: 0;
+}
 .portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
@@ -403,9 +405,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #FCEBB6;
+    border-color: #ddd;
     color: #fff;
-    background-color: #F0A830;
+    background-color: #78C0A8;
 }
 
 .btn-primary:active,
