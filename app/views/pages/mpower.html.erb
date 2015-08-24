@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><%= image_tag("mpwr.png", height: '150', width: '150', class: 'noBorder') %></a>
+                <a class="navbar-brand page-scroll" href="#page-top">MPWR</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,7 +77,15 @@
     </nav>
 
     <header>
-                        
+        <div class="header-container">
+    <div id="video-container">
+    <video preload="true" autoplay="autoplay" loop="loop" colume="0" >
+        <source src="/assets/ct.mp4" type="video/mp4">
+<!--         <source src="video/cruise.webm" type="video/webm">
+        <source src="video/cruise.ogv" type="video/ogg">
+ -->
+
+             
             <section class="rw-wrapper">
                 <h2 class="rw-sentence">
                     <span>What</span>
@@ -89,30 +97,26 @@
                         <span>encourage</span>
                         <span>hold accountable</span>
                         <span>inspire</span>
-                        <span><%= image_tag("mpwr.png", height: '350', width: '350') %></span>
+                        <span>MPWR</span>
                     </div>
                     <span>today?</span>
                 </h2>
             </section>
                         <h2 class="rw-sentence-IE">What would you like to share today?</h2>
+                            </video>
+    <h3>
+    FULL WIDTH HEADER VIDEO TUTORIAL    
+    </h3>
+    </div>
+    </div>
     </header>
-
-        <section id="weDid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="section-heading">We did</h1>
-                        <hr class="primary">
-                    </div>
-                </div>
-            </div>
-        </section>
 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h1 class="section-heading">About Us </h1>
+
                     <hr class="light">
                     <p class="text-faded">Everybody needs assistance and we provide that. Whether its being a positive role model or helping setup and prepare for job interviews....</p>
                     <a href="#" class="btn btn-default btn-xl">Get Started!</a>
@@ -130,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
@@ -305,6 +309,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/headerScroll.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
