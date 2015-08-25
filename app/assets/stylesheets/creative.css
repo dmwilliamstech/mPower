@@ -91,7 +91,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #0cc9bb;
+/*    color: #0cc9bb;*/
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -185,7 +185,25 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
+
+
+header video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/assets/motivation.png) no-repeat;
+    background-size: cover; 
+}
+
 
 header .header-content {
     position: relative;
