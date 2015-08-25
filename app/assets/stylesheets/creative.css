@@ -56,7 +56,10 @@ p {
 }
 
 .bg-dark {
-    background-color: #7c7777;
+    background-color: #b2b0b0;
+}
+.bg-blue {
+    background-color: #0cc9bb;
 }
 
 .text-faded {
@@ -71,9 +74,9 @@ aside {
     padding: 50px 0;
 }
 
-.no-padding {
-    padding: 0;
-}
+/*.no-padding {
+    padding: 10px 0;
+}*/
 .pbcColor{
     color: #0cc9bb;
 }
@@ -285,6 +288,8 @@ video.fillWidth {
 }
 
 .section-heading {
+    font-size: 70px;
+    font-family: fantasy;
     margin-top: 0;
 }
 
@@ -366,9 +371,9 @@ video.fillWidth {
     }
 }
 
-.call-to-action h2 {
+/*.call-to-action h2 {
     margin: 0 auto 20px;
-}
+}*/
 
 .text-primary {
     color: #0cc9bb;
@@ -525,8 +530,11 @@ body {
 }
 
 #contact{
-    background-color: #0cc9bb;
+    background-color: #000000;
 }
 #whatwedo{
     background-color: #000000;
+}
+.paddington{
+    padding: 50px 0;
 }
