@@ -3,7 +3,8 @@ body{
 	background-size: cover;
 }
 .rw-wrapper{
-	background: #fff url(/assets/bg3.jpg) no-repeat top right;
+/*	background: #fff url(/assets/bg3.jpg) no-repeat top right;
+*/
 	width: 80%;
 	position: relative;
 	margin: 0px auto 0 auto;
