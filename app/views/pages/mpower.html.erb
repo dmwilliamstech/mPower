@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- DC Social Icons CSS -->
       
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -65,6 +66,10 @@
                         <%= link_to "How we MPWR", "#howwempwr", class: "page-scroll" %>
                     </li>
                     <li>
+                        <%= link_to "Schedule and Past events", "#schedule", class: "page-scroll" %>
+                    </li>
+                    
+                    <li>
                         <%= link_to "Checkout my blog", posts_path %>
                     </li>
                     <li>
@@ -109,7 +114,7 @@
     <section class="bg-primary paddington" id="about">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 class="section-heading">About Us </h1>
+                    <h1 class="section-heading light-gray-text">About Us </h1>
 
                     <hr class="light">
                     <p class="text-faded">Everybody needs assistance and we provide that. Whether its being a positive role model or helping setup and prepare for job interviews....</p>
@@ -121,7 +126,7 @@
     <section id="whatwedo" class="paddington">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-heading">What we do</h1>
+                    <h1 class="section-heading blue-text">What we do</h1>
                     <hr class="primary">
             </div>
         </div>
@@ -157,10 +162,9 @@
             </div>
     </section>
 
-<div id="top"></div>
-<section class="gallery bg-dark paddington" id="howwempwr">
+<section class="gallery bg-white paddington" id="howwempwr">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-heading">How we mpwr</h1>
+                    <h1 class="section-heading hwm-text">How we mpwr</h1>
                     <hr class="primary">
             </div>
 
@@ -282,11 +286,11 @@
 </section> <!-- / projects -->
 
 
-    <section class="bg-blue paddington">
+    <section class="bg-blue paddington" id="schedule">
         <div class=" text-center">
             <div class="call-to-action">
-                <h1 class="section-heading">Our schedule and what we have done</h1>
-                <a href="#" class="btn btn-default btn-xl wow tada">Check it out!</a>
+                <h1 class="section-heading light-gray-text">Our schedule and what we have done</h1>
+                  <a><%= link_to 'Check it out!', schedule_path, class: "btn btn-default btn-xl wow tada" %></a>
             </div>
         </div>
     </section>
@@ -295,13 +299,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 class="section-heading">Let's Get In Touch!</h1>
+                    <h1 class="section-heading blue-text">Let's Get In Touch!</h1>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+                    <p class="blue-text">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
                     Ready to get MPWR'D
                     We'd love to hear from you. You can either Give us a call or send us an email and one of our awesome team members will assist you.
                     </p>
                 </div>
+
+
+<div id="socialContainer">
+  <div class="social_icons"><a class="btn_facebook"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+  <a class="btn_twitter" href="https://twitter.com/mpwr_me"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+  <a class="btn_google-plus" href="https://plus.google.com/u/0/b/101517606644162077867/dashboard/overview"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+  <a class="btn_linkedin"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a><a class="btn_instagram"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a>
+  <a class="btn_tumblr" href="https://www.youtube.com/channel/UCc95W8-1oGWgj3n3NkC5u9Q"><i class="fa fa-youtube"></i><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>301-643-8234</p>

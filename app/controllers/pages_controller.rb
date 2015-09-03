@@ -16,15 +16,8 @@ class PagesController < ApplicationController
 
 	end
 
-	def aboutus
-
-	end
-
-
-	def whoweare
-	end
-
-	def whatwedo
+	def schedule
+		
 	end
 
 	 def new

@@ -56,14 +56,32 @@ p {
 }
 
 .bg-dark {
-    background-color: #b2b0b0;
+    background-color: #7c7777;
 }
 .bg-blue {
     background-color: #0cc9bb;
 }
+.bg-white{
+    background-color: #f9f7f4 ;
+}
 
 .text-faded {
     color: rgba(255,255,255,.7);
+}
+.blue-text{
+    color: #0cc9bb;
+}
+.white-text{
+    background-color: #b2b0b0;
+}
+.light-gray-text{
+    color: #b2b0b0;
+}
+.dark-gray-text{
+    color: #7c7777;
+}
+.black-text{
+    color: #000000;
 }
 
 section {
