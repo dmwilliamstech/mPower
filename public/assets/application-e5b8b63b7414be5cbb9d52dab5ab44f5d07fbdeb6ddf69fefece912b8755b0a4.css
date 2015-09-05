@@ -7374,7 +7374,7 @@ p {
     color: #0cc9bb;
 }
 .white-text{
-    background-color: #b2b0b0;
+    color: #FFFFFF;
 }
 .light-gray-text{
     color: #b2b0b0;
@@ -7449,7 +7449,7 @@ aside {
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: black;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -7499,11 +7499,12 @@ aside {
 
 header {
     position: relative;
+
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-position: center;
+    background-position: inherit;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -7858,6 +7859,11 @@ body {
 .paddington{
     padding: 50px 0;
 }
+#mainNav{
+transition-duration: 1s;
+}
+
+}
 @import url('normalize.css');
 /* General Demo Style */
 html{
@@ -7998,10 +8004,7 @@ body{
 	font-family:'Myriad Pro', Arial, sans-serif;
 	font-size: 15px;
 }
-a{
-	color: #FCEBB6;
-	text-decoration: none;
-}
+
 .container{
 	width: 100%;
 	position: relative;
@@ -18405,10 +18408,11 @@ h1.main,p.demos {
 	color: #fff;
 }
 
-body{
+/*body{
 	background-attachment: fixed;
 	background-size: cover;
-}
+}*/
+
 .rw-wrapper{
 
 	width: 80%;
@@ -18430,7 +18434,7 @@ body{
 	position: absolute;
 }
 .rw-sentence > span:first-child{
-	top: 0px;
+	top: 50px;
 	left: 140px;
 	font-size: 700%;
 	color: #F5F7F6;
