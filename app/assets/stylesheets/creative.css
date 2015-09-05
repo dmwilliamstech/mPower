@@ -72,7 +72,7 @@ p {
     color: #0cc9bb;
 }
 .white-text{
-    background-color: #b2b0b0;
+    color: #FFFFFF;
 }
 .light-gray-text{
     color: #b2b0b0;
@@ -147,7 +147,7 @@ aside {
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: black;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -197,11 +197,12 @@ aside {
 
 header {
     position: relative;
+
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-position: center;
+    background-position: inherit;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -555,4 +556,9 @@ body {
 }
 .paddington{
     padding: 50px 0;
+}
+#mainNav{
+transition-duration: 1s;
+}
+
 }

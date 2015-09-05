@@ -1,7 +1,7 @@
-body{
+/*body{
 	background-attachment: fixed;
 	background-size: cover;
-}
+}*/
 .rw-wrapper{
 
 	width: 80%;
@@ -23,7 +23,7 @@ body{
 	position: absolute;
 }
 .rw-sentence > span:first-child{
-	top: 0px;
+	top: 50px;
 	left: 140px;
 	font-size: 700%;
 	color: #F5F7F6;
