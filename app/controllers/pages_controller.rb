@@ -20,6 +20,10 @@ class PagesController < ApplicationController
 		
 	end
 
+  def thanks
+
+  end
+
 	 def new
     @contact = Contact.new
   end

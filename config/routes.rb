@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/post', to: 'posts#index'
   get '/mpwr', to: 'pages#mpower'
   get '/schedule', to: 'pages#schedule'
+  get '/thanks', to: 'pages#thanks'
   get "*path" => redirect("/mpwr")
 
 end
